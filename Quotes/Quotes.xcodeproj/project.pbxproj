@@ -13,6 +13,11 @@
 		1BFD13471D85971A008F22B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD13461D85971A008F22B2 /* Assets.xcassets */; };
 		1BFD134A1D85971A008F22B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFD13481D85971A008F22B2 /* LaunchScreen.storyboard */; };
 		1BFD13521D8598B7008F22B2 /* QuotesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD13511D8598B7008F22B2 /* QuotesCollectionViewController.swift */; };
+		1BFD13551D85B305008F22B2 /* EditQuoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD13541D85B305008F22B2 /* EditQuoteTableViewController.swift */; };
+		1BFD13571D85B32F008F22B2 /* ColorPickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD13561D85B32F008F22B2 /* ColorPickerTableViewController.swift */; };
+		1BFD135B1D85B3BC008F22B2 /* SizePickerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD135A1D85B3BC008F22B2 /* SizePickerTableViewController.swift */; };
+		1BFD135F1D85B432008F22B2 /* ColorPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD135E1D85B432008F22B2 /* ColorPickerTableViewCell.swift */; };
+		1BFD13641D85BDAA008F22B2 /* UIColor+Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFD13631D85BDAA008F22B2 /* UIColor+Quotes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1BFD13491D85971A008F22B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BFD134B1D85971A008F22B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFD13511D8598B7008F22B2 /* QuotesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuotesCollectionViewController.swift; path = ViewControllers/QuotesCollectionViewController.swift; sourceTree = "<group>"; };
+		1BFD13541D85B305008F22B2 /* EditQuoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EditQuoteTableViewController.swift; path = ViewControllers/EditQuoteTableViewController.swift; sourceTree = "<group>"; };
+		1BFD13561D85B32F008F22B2 /* ColorPickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerTableViewController.swift; path = ViewControllers/ColorPickerTableViewController.swift; sourceTree = "<group>"; };
+		1BFD135A1D85B3BC008F22B2 /* SizePickerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SizePickerTableViewController.swift; path = ViewControllers/SizePickerTableViewController.swift; sourceTree = "<group>"; };
+		1BFD135E1D85B432008F22B2 /* ColorPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPickerTableViewCell.swift; path = Views/Cells/ColorPickerTableViewCell.swift; sourceTree = "<group>"; };
+		1BFD13631D85BDAA008F22B2 /* UIColor+Quotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Quotes.swift"; path = "Extensions/UIColor+Quotes.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,10 @@
 		1BFD13391D85971A008F22B2 /* Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				1BFD13621D85BD90008F22B2 /* Extensions */,
+				1BFD135C1D85B3F2008F22B2 /* Views */,
+				1BFD13531D85B2DF008F22B2 /* ViewControllers */,
 				1BFD133A1D85971A008F22B2 /* AppDelegate.swift */,
-				1BFD13511D8598B7008F22B2 /* QuotesCollectionViewController.swift */,
 				1BFD13431D85971A008F22B2 /* Main.storyboard */,
 				1BFD13461D85971A008F22B2 /* Assets.xcassets */,
 				1BFD13481D85971A008F22B2 /* LaunchScreen.storyboard */,
@@ -65,6 +77,41 @@
 				1BFD133C1D85971A008F22B2 /* Quotes.xcdatamodeld */,
 			);
 			path = Quotes;
+			sourceTree = "<group>";
+		};
+		1BFD13531D85B2DF008F22B2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD13511D8598B7008F22B2 /* QuotesCollectionViewController.swift */,
+				1BFD13541D85B305008F22B2 /* EditQuoteTableViewController.swift */,
+				1BFD13561D85B32F008F22B2 /* ColorPickerTableViewController.swift */,
+				1BFD135A1D85B3BC008F22B2 /* SizePickerTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1BFD135C1D85B3F2008F22B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD135D1D85B400008F22B2 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1BFD135D1D85B400008F22B2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD135E1D85B432008F22B2 /* ColorPickerTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		1BFD13621D85BD90008F22B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BFD13631D85BDAA008F22B2 /* UIColor+Quotes.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFD13641D85BDAA008F22B2 /* UIColor+Quotes.swift in Sources */,
+				1BFD135B1D85B3BC008F22B2 /* SizePickerTableViewController.swift in Sources */,
+				1BFD13551D85B305008F22B2 /* EditQuoteTableViewController.swift in Sources */,
+				1BFD13571D85B32F008F22B2 /* ColorPickerTableViewController.swift in Sources */,
 				1BFD133E1D85971A008F22B2 /* Quotes.xcdatamodeld in Sources */,
+				1BFD135F1D85B432008F22B2 /* ColorPickerTableViewCell.swift in Sources */,
 				1BFD13521D8598B7008F22B2 /* QuotesCollectionViewController.swift in Sources */,
 				1BFD133B1D85971A008F22B2 /* AppDelegate.swift in Sources */,
 			);
